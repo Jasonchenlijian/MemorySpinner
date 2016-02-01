@@ -3,7 +3,7 @@
 
 
 ## Preview ##
-![效果图](https://img.alicdn.com/imgextra/i3/181257671/TB2A0pSkXXXXXbVXXXXXXXXXXXX_!!181257671.gif)
+![效果图](https://img.alicdn.com/imgextra/i4/181257671/TB2SphCkXXXXXauXpXXXXXXXXXX_!!181257671.gif)
 
 
 ## Gradle ##
