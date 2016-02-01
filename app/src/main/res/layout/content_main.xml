@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.clj.memoryspinnerexample.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.clj.memoryspinner.MemorySpinner xmlns:ms="http://schemas.android.com/apk/res/com.clj.memoryspinnerexample"
+        android:id="@+id/ms"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+
+        ms:msDropItemBackgroundColor="@android:color/white"
+        ms:msDropItemText="全部选项"
+        ms:msDropItemTextColor="@android:color/black"
+        ms:msDropItemTextSize="14sp"
+
+        ms:msDropTitleBackgroundColor="@color/colorPrimary"
+        ms:msDropTitleText="常用选项"
+        ms:msDropTitleTextColor="@android:color/white"
+        ms:msDropTitleTextSize="12sp"
+
+        ms:msItemTextColor="@android:color/black"
+        ms:msItemTextSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MemorySpinner">
+        <!-- 默认选项的颜色-->
+        <attr name="msItemTextColor" format="reference|color" />
+        <!-- 默认选项大小 -->
+        <attr name="msItemTextSize" format="reference|dimension" />
+
+        <!-- 下拉标题的背景颜色-->
+        <attr name="msDropTitleBackgroundColor" format="reference|color" />
+        <!-- 下拉标题字体的颜色-->
+        <attr name="msDropTitleTextColor" format="reference|color" />
+        <!-- 下拉标题字体大小 -->
+        <attr name="msDropTitleTextSize" format="reference|dimension" />
+        <!-- 下拉标题文字 -->
+        <attr name="msDropTitleText" format="reference|string" />
+
+        <!-- 下拉选项的背景颜色-->
+        <attr name="msDropItemBackgroundColor" format="reference|color" />
+        <!-- 下拉选项字体的颜色-->
+        <attr name="msDropItemTextColor" format="reference|color" />
+        <!-- 下拉选项字体大小 -->
+        <attr name="msDropItemTextSize" format="reference|dimension" />
+        <!-- 下拉选项文字 -->
+        <attr name="msDropItemText" format="reference|string" />
+    </declare-styleable>
+
+</resources>
