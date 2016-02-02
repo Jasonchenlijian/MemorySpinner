@@ -7,7 +7,9 @@
 
 
 ## Gradle ##
-
+		dependencies {
+    		compile 'com.clj:memory_spinner:1.0.0'
+		}
 
 
 ## Usage ##
