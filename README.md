@@ -70,7 +70,7 @@
     	memorySpinner.setData(null, list);
 
 - 方法说明
-- 
+ 
 		// 设置memory数量，默认5
 		void setMemoryCount(int count) 
 		// 设置填充的list，第一项为预设memory内容，可空；第二项为所有内容，不能为空。  
