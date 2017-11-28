@@ -25,12 +25,12 @@ public class MemorySpinnerUtils {
         return newList;
     }
 
-    public static String SceneList2String(List SceneList) throws IOException {
+    public static String SceneList2String(List list) throws IOException {
 
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(
                 byteArrayOutputStream);
-        objectOutputStream.writeObject(SceneList);
+        objectOutputStream.writeObject(list);
         String SceneListString = new String(Base64.encode(
                 byteArrayOutputStream.toByteArray(), Base64.DEFAULT));
         objectOutputStream.close();
@@ -38,10 +38,10 @@ public class MemorySpinnerUtils {
         return SceneListString;
     }
 
-    public static List String2SceneList(String SceneListString)
+    public static List String2SceneList(String str)
             throws IOException, ClassNotFoundException {
 
-        byte[] mobileBytes = Base64.decode(SceneListString.getBytes(),
+        byte[] mobileBytes = Base64.decode(str.getBytes(),
                 Base64.DEFAULT);
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(
                 mobileBytes);

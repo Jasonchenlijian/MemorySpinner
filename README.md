@@ -6,13 +6,12 @@
 ![效果图](https://img.alicdn.com/imgextra/i4/181257671/TB2SphCkXXXXXauXpXXXXXXXXXX_!!181257671.gif)
 
 
-## Gradle ##
-	dependencies {
-    	compile 'com.clj:memory_spinner:1.0.0'
-	}
+## Gradle
+
+    compile 'com.clj:memory_spinner:1.0.0'
 
 
-## Usage ##
+## Usage
 
 - 在xml中像添加官方Spinner一样添加spinner，并设置自己喜欢的风格
 
@@ -71,7 +70,6 @@
 
 - 方法说明
  
-		// 设置memory数量，默认5
-		void setMemoryCount(int count) 
-		// 设置填充的list，第一项为预设memory内容，可空；第二项为所有内容，不能为空。  
-    	void setData(ArrayList<String> prepareList, ArrayList<String> normalList)
+	`void setMemoryCount(int count)`设置memory数量，默认5
+
+    `void setData(ArrayList<String> prepareList, ArrayList<String> normalList)`设置填充的list，第一项为预设memory内容，可空；第二项为所有内容，不能为空。 

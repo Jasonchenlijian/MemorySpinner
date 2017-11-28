@@ -1,7 +1,6 @@
 package com.clj.memoryspinner;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,6 +10,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class MemorySpinner extends Spinner {
+
+    private static final String KEY_DATA = "key_memory_spinner";
 
     private Context mContext;
     private ArrayList<String> prepareList = new ArrayList<>();
@@ -52,6 +53,7 @@ public class MemorySpinner extends Spinner {
 
     /**
      * 设置记住的选项数量，默认是5
+     *
      * @param count
      */
     public void setMemoryCount(int count) {
@@ -61,8 +63,7 @@ public class MemorySpinner extends Spinner {
     private void initData() {
 
         final ArrayList<String> saveMemoryList = new ArrayList<>();
-        SharedPreferences sp = mContext.getSharedPreferences("memorySpinner", 0);
-        String saveMemoryString = sp.getString("clj_memory_spinner", null);
+        String saveMemoryString = MemoryCache.get(mContext).getAsString(KEY_DATA);
         if (saveMemoryString != null) {
             try {
                 @SuppressWarnings("unchecked")
@@ -110,10 +111,7 @@ public class MemorySpinner extends Spinner {
 
                 try {
                     String memoryString = MemorySpinnerUtils.SceneList2String(newMemoryList);
-                    SharedPreferences sp = mContext.getSharedPreferences("memorySpinner", 0);
-                    SharedPreferences.Editor editor = sp.edit();
-                    editor.putString("clj_memory_spinner", memoryString);
-                    editor.apply();
+                    MemoryCache.get(mContext).put(KEY_DATA, memoryString);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
