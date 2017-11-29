@@ -8,7 +8,7 @@
 
 ## Gradle
 
-    compile 'com.clj:memory_spinner:1.0.0'
+    compile 'com.clj.memoryspinner:memoryspinner:1.1.0'
 
 
 ## Usage
